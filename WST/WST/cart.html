@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+<body>
+    <header id="main-header">
+        <nav id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="landing.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="account.html" class="nav-link">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="page-header" class="section header-section">
+        <h1>Shopping Cart</h1>
+    </section>
+    <section id="cart-section" class="section">
+        <ul id="cart-items" class="cart-list">
+            <li class="cart-item">
+                <img src="" alt="Type A Uniform" class="cart-image">
+                <h3 class="cart-product-name">Type-A Uniform(S)</h3>
+                <p class="price cart-price">1000.00</p>
+                <label for="quantity" class="quantity-label">Quantity: </label><input type="number" id="quantity" class="quantity-input" min="1" value="1">
+            </li>
+        </ul>
+
+        <section id="cart-summary" class="cart-summary">
+            <p>Subtotal: <span class="price total-price">1000.00</span></p>
+        </section>
+
+        <a href="checkout.html" class="btn btn-primary btn-checkout">Proceed to Checkout</a>
+
+        <section id="empty-cart-message" class="empty-message">
+            <p>Your cart is currently empty.</p>
+        </section>
+    </section>
+</html>

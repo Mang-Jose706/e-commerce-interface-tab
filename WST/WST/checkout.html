@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Check Out</title>
+</head>
+<body>
+    <header id="main-header">
+        <nav id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="landing.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="account.html" class="nav-link">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="page-header" class="section header-section">
+        <h1>Checkout</h1>
+    </section>
+    <main id="checkout-main" class="checkout-container">
+        <section id="shipping-section" class="checkout-section">
+            <h2>Shipping Address</h2>
+            <fieldset class="form-group">
+                <label for="name" class="form-label">Full Name</label><br>
+                <input type="text" id="name" class="form-input" name="name" placeholder="Full Name" required><br>
+                <label for="street" class="form-label">Street Address</label><br>
+                <input type="text" id="street" class="form-input" name="street" placeholder="Street" required><br>
+                <label for="zip" class="form-label">Zip Code</label><br>
+                <input type="text" id="zip" class="form-input" name="zip" placeholder="Zip Code" required>
+            </fieldset>
+        </section>
+
+        <section id="payment-section" class="checkout-section">
+            <h2>Payment Details</h2>
+            <form id="payment-form" class="form-group">
+                <input type="radio" id="credit" name="paymentMethod" value="Credit Card"><label for="credit" class="form-label">Credit Card</label><br>
+                <input type="radio" id="paypal" name="paymentMethod" value="PayPal"><label for="paypal" class="form-label">PayPal</label><br>
+            </form>
+        </section>
+    </main>
+    
+    <aside id="order-summary" class="order-summary">
+        <h2>Order Summary</h2>
+        <p class="summary-total">Total: <span class="price summary-price">1000.00</span></p>
+        <button type="submit" class="btn btn-primary btn-submit">Place Order</button>
+    </aside>
+</body>
+</html>
