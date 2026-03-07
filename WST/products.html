@@ -3,25 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Products</title>
 </head>
 <body>
-    <main>
-        <article>
-            <img src="" alt="Type A Uniform">
-            <p>Price: PHP 1000-1100</p>
-            <a href="TypeADetail.html">View Details</a>
-        </article><br>
-        <article>
-            <img src="TypeBDetail.html" alt="Type B Uniform">
-            <p>Price: PHP 500-600 </p>
-            <a href="">View Details</a>
-        </article><br>
-        <article>
-            <img src="IDLaceDetail.html" alt="ID Lace">
-            <p>Price: PHP 100</p>
-            <a href="">View Details</a>
-        </article>
-    </main>
-</body>
+    <header id="main-header">
+        <div class="logo">UEP Webstore</div>
+        <nav id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="landing.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="account.html" class="nav-link">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="page-header" class="section header-section">
+        <h1>Our Products</h1>
+    </section>
+    <section id="products-section" class="section products-layout">
+        <aside id="products-filter" class="products-filter">
+            <h3>Filter Products</h3>
+            <div class="filter-group">
+                <h4>Category</h4>
+                <label><input type="checkbox"> Uniforms</label>
+                <label><input type="checkbox"> PE Uniforms</label>
+                <label><input type="checkbox"> Accessories</label>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <label><input type="checkbox"> ₱0 - ₱500</label>
+                <label><input type="checkbox"> ₱500 - ₱1000</label>
+                <label><input type="checkbox"> ₱1000+</label>
+            </div>
+            <button class="btn btn-primary" style="width: 100%; margin-top: 20px;">Apply Filters</button>
+        </aside>
+        <main id="products-grid" class="products-container">
+            <article class="product-card">
+                <img src="" alt="Type A Uniform" class="product-image">
+                <h3 class="product-name">Type-A Uniform</h3>
+                <p class="product-price">Price: PHP 1000-1100</p>
+                <a href="TypeADetail.html" class="btn btn-secondary">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="" alt="Type B Uniform" class="product-image">
+                <h3 class="product-name">Type-B Uniform</h3>
+                <p class="product-price">Price: PHP 500-600</p>
+                <a href="TypeBDetail.html" class="btn btn-secondary">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="" alt="ID Lace" class="product-image">
+                <h3 class="product-name">ID Lace</h3>
+                <p class="product-price">Price: PHP 100</p>
+                <a href="IDLaceDetail.html" class="btn btn-secondary">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="" alt="Type-A PE Uniform" class="product-image">
+                <h3 class="product-name">Type-A PE Uniform</h3>
+                <p class="product-price">Price: PHP 800-900</p>
+                <a href="TypeADetail.html" class="btn btn-secondary">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="" alt="Type-B PE Uniform" class="product-image">
+                <h3 class="product-name">Type-B PE Uniform</h3>
+                <p class="product-price">Price: PHP 400-500</p>
+                <a href="TypeBDetail.html" class="btn btn-secondary">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="" alt="ID Lace - White" class="product-image">
+                <h3 class="product-name">ID Lace - White</h3>
+                <p class="product-price">Price: PHP 120</p>
+                <a href="IDLaceDetail.html" class="btn btn-secondary">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="" alt="School Tie" class="product-image">
+                <h3 class="product-name">School Tie</h3>
+                <p class="product-price">Price: PHP 250</p>
+                <a href="#" class="btn btn-secondary">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="" alt="Polo Shirt" class="product-image">
+                <h3 class="product-name">Polo Shirt</h3>
+                <p class="product-price">Price: PHP 600-700</p>
+                <a href="#" class="btn btn-secondary">View Details</a>
+            </article>
+</main>
+    </section>
 </html>
