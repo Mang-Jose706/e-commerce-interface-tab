@@ -1,14 +1,8 @@
-function generateIDs(count) {
-  const idArray = [];
-
-  for (let i = 0; i < count; i++) {
-    if (i === 5) {
-      continue;
+function calculateTotal(...numbers) {
+  return numbers.reduce((sum, current) => {
+    if (typeof current !== 'number' || Number.isNaN(current)) {
+      throw new TypeError("Invalid input: All arguments must be numbers");
     }
-    idArray.push(`ID-${i}`);
-  }
-  return idArray;
+    return sum + current;
+  }, 0);
 }
-
-const result = generateIDs(7);
-console.log(result); 
