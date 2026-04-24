@@ -3,25 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Products</title>
 </head>
 <body>
-    <main>
-        <article>
-            <img src="" alt="Type A Uniform">
-            <p>Price: PHP 1000-1100</p>
-            <a href="TypeADetail.html">View Details</a>
-        </article><br>
-        <article>
-            <img src="TypeBDetail.html" alt="Type B Uniform">
-            <p>Price: PHP 500-600 </p>
-            <a href="">View Details</a>
-        </article><br>
-        <article>
-            <img src="IDLaceDetail.html" alt="ID Lace">
-            <p>Price: PHP 100</p>
-            <a href="">View Details</a>
-        </article>
-    </main>
+    <header id="main-header">
+        <div class="logo">UEP Webstore</div>
+        <nav id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="landing.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="account.html" class="nav-link">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="page-header" class="section header-section">
+        <div class="header-content">
+            <h1>Our Products</h1>
+        </div>
+        <div class="category-selector">
+            <label for="filter">Filter:</label>
+            <select name="Filter" id="filter-category">
+                <option value="">All Products</option>
+                <option value="Uniforms">Uniforms</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Footwear">Footwear</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+        </div>
+    </section>
+    <section id="products-section" class="section products-layout">
+        
+        <main id="products-grid" class="products-container">
+            <!-- Products will be dynamically rendered here by JavaScript -->
+        </main>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

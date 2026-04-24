@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cart</title>
 </head>
 <body>
-    <ul>
-        <li>
-            <img src="" alt="Type A Uniform">
-            <h3>Type-A Uniform(S)</h3>
-            <p>Price: 1000.00</p>
-            <label for="quantity">Quantity: </label><input type="number" id="quantity" min="1" value="1">
-        </li>
-    </ul>
-
-    <section>
-        <p>Subtotal: Php 1000.00</p>
+    <header id="main-header">
+        <div class="logo">UEP Webstore</div>
+        <nav id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="landing.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="account.html" class="nav-link">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="page-header" class="section header-section">
+        <h1>Shopping Cart (<span class="cart-count">0</span> items)</h1>
     </section>
+    <section id="cart-section" class="section">
+        <ul class="cart-list">
+            <!-- Cart items will be dynamically generated here -->
+        </ul>
 
-    <a href="checkout.html" role="button">Proceed to Checkout</a>
+        <section id="cart-summary" class="cart-summary">
+            <p class="cart-total">Total: <span class="price total-price">PHP 0.00</span></p>
+        </section>
 
-    <section>
-        <p>Your cart is currently empty.</p>
+        <a href="checkout.html" class="btn btn-primary btn-checkout">Proceed to Checkout</a>
+
+        <section id="empty-cart-message" class="empty-message">
+            <p>Your cart is currently empty.</p>
+            <a href="products.html" class="btn btn-secondary">Continue Shopping</a>
+        </section>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
